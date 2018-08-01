@@ -1,20 +1,7 @@
-<!doctype html>
-<html>
-<head>
-<script>
-function add(){
-var a,b,c;
-a=Number(document.getElementById("first").value);
-b=Number(document.getElementById("second").value);
-c= a + b;
-document.getElementById("answer").value= c;
-}
-</script>
-</head>
-<body>
-<input id="first">
-<input id="second">
-<button onclick="add()">Add</button>
-<input id="answer">
-</body>
-</html>
+var calculator = require('./calculator');
+ 
+var a=10, b=5;
+ 
+console.log("Addition : "+calculator.add(a,b));
+console.log("Subtraction : "+calculator.subtract(a,b));
+console.log("Multiplication : "+calculator.multiply(a,b));
