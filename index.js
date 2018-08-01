@@ -1,9 +1,20 @@
-var express = require ("express");
-var app = express();
-var port = process.env.PORT || 3000;
-
-app.get("/", function(req,res) {
-	res.send("Hello World!!");
-});
-
-app.listen(port);
+<!doctype html>
+<html>
+<head>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
+</script>
+</head>
+<body>
+<input id="first">
+<input id="second">
+<button onclick="add()">Add</button>
+<input id="answer">
+</body>
+</html>
